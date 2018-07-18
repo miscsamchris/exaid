@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Exaid</title>
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudfare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>	
+	
+		<style>
+			body,h1,h2,h3,h4,h5,h6{
+				font-family: "Lato", sans-serif
+			}
+			.w3-bar,h1,button{
+				font-family: "Montserrat", sans-serif
+			}
+			.fa-anchor, .fa-coffee{
+				font-size: 200px
+			}
+		</style>
+		<!--startsmothscrolling-->
+<script type="text/javascript" src="../move-top.js"></script>
+<script type="text/javascript" src="../easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+	<script src="js/jquery.swipebox.min.js"></script> 
+	<script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+	</script>
+<!--swipe box js-->
+	</head>
+	<body data-spy="scroll" data-target=".navba" data-offset="50">
+		<nav class=" navba navbar-expand-sm bg-dark navbar-dark fixed-top">
+			<ul class="navbar-nav">
+				<!--Navbar-->
+				<div class="w3-top">
+					<div class="w3-bar w3-green w3-card w3-left-align w3-large">
+						<style>
+							.left{
+								float: left;
+							}
+							.right{
+								float: right;
+							}
+						</style>
+						<div>
+							<br>
+							<h1 style="float:left ; color:white">EXAID</h1>
+							<!--Login-->
+							<div style="float:right" class="w3ls-login w3l-sub">
+								<input type="submit" value="Login">
+							</div>
+
+							<div style="float:right" class="agile-field-txt">
+								<label>Password:</label>
+								<input type="password" name="password" placeholder=" " required="" id="myInput" />
+							</div>
+	
+							<div style="float:right" class="agile-field-txt">
+								<label>Username:</label>
+								<input type="text" name="name" placeholder=" " required="" />
+							</div>
+							<!--//Login-->
+							<br><br>
+					
+							<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white"
+								href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"
+								<i class="fa fa-bars"></i>
+							</a>
+							<li class="nav-item">
+								<a href="#home" style="color:black" 
+									class="nav-link w3-bar-item w3-left-align w3-button w3-padding-large w3-hover-white">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="#about" style="color:black"
+									class="nav-link w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#team" style="color:black"
+									class="nav-link w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Team</a>
+							</li>
+							<li class="nav-item">
+								<a href="#reg" style="color:black"
+									class="nav-link w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Register</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contact" style="color:black"
+									class="nav-link w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+							</li>
+						</div>
+					</div>
+					<!--Navbar on small screens-->	
+					<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+						<a href="#about" class="w3-bar-item w3-button w3-padding-large">About</a>
+						<a href="#team" class="w3-bar-item w3-button w3-padding-large">Team</a>
+						<a href="#reg" class="w3-bar-item w3-button w3-padding-large">Register</a>
+						<a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+					</div>
+					<!--//Navbar on small screens-->
+				</div>
+			</ul>
+		</nav>
+		
+		<!--Header-->
+		<header id="about" class="container-fluid w3-container w3-white w3-center" style="padding:128px 16px">
+			<br><br><h1>About</h1>
+			<span>Lorem ipsum dolor sit amet, ad eos iriure corpora prodesset. Partem timeam at vim, mel veritus accusata ea. Ius ei dicam inciderint, eleifend deseruisse ei mea. Alia dicam eam te, summo exerci ei mei.Ei sea debet choro omittantur. Ea nam quis aeterno, et usu semper senserit.</span>
+		</header>
+		<!--//Header-->
+		
+		<!--First Grid-->
+		<div id="team" class="container-fluid w3-container w3-light-pink w3-center" style="padding:128px 16px">
+			<h1>Team</h1>
+			<p>Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut </p>
+			<h5></h5>
+			<p></p>
+		</div>
+		<!--//First Grid-->
+		
+		<!--Second Grid-->
+		<div id="reg" class="container-fluid w3-container w3-white w3-center" style="padding:128px 16px">
+			<h1>Register</h1>
+			<h5></h5>
+			<p></p>
+		</div>
+		<!--//Second Grid-->
+		
+		<!--Third Grid-->
+		<div id="contact" class="container-fluid w3-container w3-light-pink w3-center" style="padding:128px 16px">
+			<h1>Contact</h1>
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=kcg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+			<!-- contact-us -->
+			<div class="contact-us">
+				<div class="container">
+					<div class="contact-grids">
+						<div class="col-md-4 contact-grid text-center">
+							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+							<p><a href="mail-to:example@mail.com">Email : samthegenius@mail.com</a></p>
+						</div>
+						<div class="col-md-4 contact-grid text-center">
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							<p>No:6, Vivekanandhar theru, Dubai kurukku sandhu, Dubai Main road, Dubai</p>
+						</div>
+						<div class="col-md-4 contact-grid text-center">
+							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+							<p>Telephone : +91 98765 43210</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="contact-info">
+						<form action="#" method="post">
+							<input type="text" name="Name" placeholder="Your Name" required>
+							<input type="text" name="Email" placeholder="Your Email" required>
+							<input type="text" name="Subject" placeholder="Subject" required>
+							<textarea placeholder="Your Message" name="Message" required></textarea>
+							<input type="submit" value="SEND MESSAGE">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//Third Grid-->
+		
+		<!--Footer-->
+		<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+			<div class="w3-xlarge w3-padding-32">
+				
+			</div>
+		</footer>
+		<!--//Footer-->
+		
+		<script>
+		//Used to toggle the menu on small screens when clicking on the menu button
+			function myFunction(){
+				var x=document.getElementbyId("navDemo");
+				if(x.className.indexOf("w3-show")==-1){
+					x.className+="w3-show";
+				} else{
+					x.className=x.className.replace("w3-show","");
+				}
+			}
+		</script>
+	</body>
+</html>
